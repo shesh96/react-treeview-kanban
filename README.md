@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# React TreeView & Kanban Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend assignment built using **React + TypeScript + Vite**, implementing a **Tree View component** and a **Kanban Board** as per the provided design and requirements.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 Deployed Link: (add after deployment)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Features
 
-## Expanding the ESLint configuration
+### 🌳 Tree View Component
+- Expand / collapse nodes
+- Add child nodes at any depth
+- Delete node with subtree
+- Inline edit on double click
+- Recursive tree structure
+- Custom CSS hierarchy visualization
+- Lazy-load ready architecture
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📋 Kanban Board
+- Three columns: Todo, In Progress, Done
+- Add and delete cards
+- Card count per column
+- Clean and responsive layout
+- Reusable components (Board → Column → Card)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🧠 UX Extras
+- User guidance footer
+- Clean and minimal UI
+- Professional component structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
+- React
+- TypeScript
+- Vite
+- CSS (no UI libraries)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Project Structure
+src/
+├── components/
+│ ├── TreeView/
+│ ├── Kanban/
+│ └── Footer/
+├── App.tsx
+├── main.tsx
+└── index.css
+
+
+---
+
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
+
+http://localhost:5173
+
+👤 Author
+
+Shesh
+Frontend Developer (React / TypeScript)
+
+📌 Notes
+
+This project focuses on clean architecture, reusable components, and matching the provided UI reference. Drag & drop support can be extended using libraries like DnD Kit if required.
+
+
+---
+
+## 7️⃣ Commit README
+
+```bash
+git add README.md
+git commit -m "Add detailed README"
+git push
+
+## 📁 Project Structure
+
