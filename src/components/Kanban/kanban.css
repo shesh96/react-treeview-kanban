@@ -1,0 +1,58 @@
+.board {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  width: 300px;
+  background: #f4f6f8;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.todo .column-header { background: #4735d0; }
+.progress .column-header { background: #ebbc20; }
+.done .column-header { background: #2ecc71; }
+
+.add-btn {
+  margin: 10px 0;
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-strip {
+  width: 4px;
+  height: 100%;
+  background: #f1c40f;
+  margin-right: 8px;
+}
+
+.card-title {
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
