@@ -5,7 +5,7 @@ A frontend assignment built using **React + TypeScript + Vite**, implementing a 
 ---
 
 ## 🚀 Live Demo
-🔗 Deployed Link: (add after deployment)
+🔗 Deployed Link: https://react-treeview-kanban.vercel.app/
 
 ---
 
